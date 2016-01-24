@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="images/favicon.ico"/> <!--favicon-->
+        <title>About Us | RNS Institute Of Technology | Bangalore, India</title> <!-- CHANGE for every page -->
+
+        <!-- CSS Stylesheets -->
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'> <!--Patua-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700' rel='stylesheet' type='text/css'><!--Roboto Mono-->
+
+
+        <!-- Javascript Files -->
+        <script src="./js/jquery-1.11.3.js" type="text/javascript"></script>
+        <script src="./jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="parallax.js-1.3.1/parallax.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+
+        //hamburgler 's code
+        function togglescroll() {
+                    $('body').on('touchstart', function(e) {
+                    if ($('body').hasClass('noscroll')) {
+                    e.preventDefault();
+                }
+                });
+                }
+
+                $(document).ready(function() {
+                        togglescroll()
+                        $(".icon").click(function() {
+                        $(".mobilenav").fadeToggle(500);
+                        $(".top-menu").toggleClass("top-animate");
+                        $("body").toggleClass("noscroll");
+                        $(".mid-menu").toggleClass("mid-animate");
+                        $(".bottom-menu").toggleClass("bottom-animate");
+                     });
+
+        
+
+           
+
+            $(".mobilenav li a").mouseenter(function(){
+            	$(this).css("font-weight","bold");
+            	$(this).css("text-decoration","underline");
+            	$(this).animate({
+            		"color": "#ffff00",                         //code for styling anchor elements inside hamburgler
+            		"letter-spacing":"8px"},850,function(){});
+            });
+
+            $(".mobilenav li a").mouseleave(function(){
+            	
+            	$(this).animate({
+            		"color": "#ffffff",
+            		"letter-spacing":"0.5px"},200,function(){});
+            	$(this).css("font-weight","normal");
+            	$(this).css("text-decoration","none");
+            });
+
+            $(".links h2 a").mouseenter(function(){
+            	$(this).css("font-weight","bold");
+            	$(this).css("color","#999900");
+            });
+
+            $(".links h2 a").mouseleave(function(){
+            	$(this).css("font-weight","normal");
+            	$(this).css("color","#000000");
+            });
+           
+                $(document).keydown(function(e) {            //code for hamburgler
+                    if (e.keyCode == 27) {
+                    $(".mobilenav").fadeOut(500);
+                    $(".top-menu").removeClass("top-animate");
+                    $("body").removeClass("noscroll");
+                    $(".mid-menu").removeClass("mid-animate");
+                    $(".bottom-menu").removeClass("bottom-animate");
+  }
+});
+            });
+
+        </script>
+
+	</head>
+
+	<body>
+		
+			<nav class="navbar navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-1">
+							<!-- college logo-->
+							<a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="College Logo"></a>
+						</div>
+						<div class="col-md-7 col-md-offset-1">
+							<ul class="list-inline top-navb">
+								<li><a href="faculty.html"><div class="navtxt">Faculty</div></a></li>
+								<li><a href="administration.html"><div class="navtxt">Administration</div></a></li>
+								<li><a href="students.html"><div class="navtxt">Students</div></a></li>
+								<li><a href="alumni.html"><div class="navtxt">Alumni</div></a></li>
+								<li><a href="visitors.html"><div class="navtxt">Visitors</div></a></li>
+							</ul>
+						</div>
+						<div class="col-md-1 col-md-offset-2">
+							<!--hamburgler's code-->
+							<div class="mobilenav">
+								<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="programs.html">Programs</a></li>
+	                    		<li><a href="departments.html">Departments</a></li>
+	                    		<li><a href="admissions.html">Admissions</a></li>
+	                    		<li><a href="campuslife.html">Campus Life</a></li>
+	                    		<li><a href="contact.html">Contact</a></li>
+	                    	</ul>
+	                    	</div>
+	                		<a href="javascript:void(0)" class="icon">
+	                    		<div class="hamburger"></div>
+	                    		<div class="menui top-menu"></div>
+	                    		<div class="menui mid-menu"></div>
+	                    		<div class="menui bottom-menu"></div>
+	                    		
+	                		</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="links">
+				<h1> About Us</h1>
+				<h2><a href="readmore.html">General </a>|<a href="principal.html"> Principal</a> |<a href="director.html"> Director</a> |<a href="chairman.html"> Chairman</a> |<a href="govbody.html"> Governing Body</a></h2>
+			</div>
+			<div class="abtus">
+				<p>RNS Institute of Technology was established in the year 2001 in Bangalore, the Silicon Valley of India. Starting with only four branches and the basic sciences department, the institute today offers seven B.E degree courses and two master degree courses. The campus is located in sylvan surroundings, providing an ideal location for educating future engineers and professionals. The institute is run by the R.N Shetty Trust, who have a major presence in many industrial sectors.<br><br>The campus has a diverse student community, with students from all over the country. Currently about 4000 students are enrolled in different programmes and the annual intake is about 1000 students. <br><br>Our faculty, under the able leadership and guidance of the Head of Departments, is dedicated to academic excellence and research. Many of our faculty members have published papers in journals of nationals and international repute.<br><br> Our alumni have reached places and left their mark in their respective fields. The college features among the top ten colleges in the city and state and is in the process of continuous growth and improvement. Very few colleges have earned this repute in a span of just fifteen years.   </p>
+			</div>
+			<footer>
+				<p><br>RNS Institute Of Technology<br>Dr. Vishnuvardhan Road, Rajarajeshwari Nagar, Channasandra, Bangalore, Karnataka, India - 560098<br>:: Developed by Rimil Dey | Designed by Prateek Prasad ::</p>
+			</footer>
+	</body>
+</html>
